@@ -6,8 +6,10 @@ GUI Calculator project adapted for Android phones
 3. Add events
 4. Use the KV language
 5. Create a calculator application
-6. Package application for iOS, Android, Windows and macOS
+6. Package application for iOS, Android, Windows and macOS 
+*** Unable to use package the software at the moment
 """
+
 
 from kivy.app import App
 from kivy.uix.button import Button
@@ -18,7 +20,12 @@ from kivy.uix.textinput import TextInput
 
 
 class MainApp(App):
+    """Parent class for the Android-based calculator"""
     def build(self):
+        """Method to create the calculator layout using Kivy framework
+        Args: self
+        Returns: Main layout > Kivy layout"""
+
         self.operators = ['+','-','*','/']
         self.last_was_operator = None
         self.last_button = None
@@ -48,6 +55,7 @@ class MainApp(App):
         main_layout.add_widget(equals_button)
 
         return main_layout
+    
     
     def on_button_press(self, instance):
         current = self.solution.text
