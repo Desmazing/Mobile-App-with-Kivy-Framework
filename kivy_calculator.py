@@ -2,7 +2,7 @@
 
 GUI Calculator project adapted for Android phones
 1. Work with Kivy widgets
-2. Lay out the UI
+2. Lay out the User Interface
 3. Add events
 4. Use the KV language
 5. Create a calculator application
